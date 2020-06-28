@@ -1,0 +1,10 @@
+{% extends "layout06.html" %}
+{% block content %}
+<h3>GET POST test!</h3>
+ <form action="/test">
+        <p><label>test: </label>
+        <input type="text" name="test" value="default">
+        <button type="submit" formmethod="get">GET</button>
+        <button type="submit" formmethod="post">POST</button></p>
+    </form>
+{% endblock %}
